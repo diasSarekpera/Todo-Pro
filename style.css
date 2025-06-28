@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+.main-wrapper{
+     width: 100%;
+     max-width: 1400px;
+     height: 100dvh;
+     padding: clamp(1rem, 3vw, 2rem);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.app{
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     width: clamp(300px, 50%, 100%);
+     height: clamp(400px, 50%,  100%);
+     overflow-y: scroll;
+     padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 2rem;
+}
+
+form{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+     width: 100%;
+}
+
+form .visually-hidden{
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     padding: 0;
+     overflow: hidden;
+     clip: rect(0 0 0 0);
+     border: 0;
+}
+
+form .add-task-btn{
+     padding: 0.5rem 2rem;
+     font-size: 1rem;
+     border: 1px solid rgba(0, 0, 0, 0.3);
+     outline: none;
+     cursor: pointer;
+     border-radius: 0.3rem;
+}
+
+form .task-input{
+     outline: none;
+     border-radius: 0.3rem;
+     padding: 0.5rem 0.3rem;
+     font-size: 1rem;
+     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.list-item{
+     display: flex;
+     gap: clamp(1rem, 3rem, 2rem);
+}
+
+.task-list{
+     display: flex;
+     flex-direction: column;
+     gap: clamp(1rem, 3vw, 2rem);
+     font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+.task-list input{
+     width: clamp(1rem, 5vw, 1.5rem);
+     height: clamp(1rem, 5vh, 1.5rem);
+}
+
+.del-btn{
+     padding: 0.1rem 0.2rem;
+}
+
+.overlined{
+     text-decoration: line-through;
+     opacity: 0.6;
+}
